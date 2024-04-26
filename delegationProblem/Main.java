@@ -1,4 +1,5 @@
 package delegationProblem;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -12,15 +13,17 @@ public class Main {
 		// worker[3].setEmployeeType(new Regular());
 		// worker[3].setSalary(500);
 
-		for (int i = 0 ; i < worker.length; i++) {
+		for (int i = 0; i < worker.length; i++) {
 			worker[i].doWork();
-			((Sayable)worker[i]).say(); // will trigger exception for Insect
+			((Sayable) worker[i]).say(); // will trigger exception for Insect
 		}
 
 		// for (int i=0; i < worker.length; i++) {
-		// 	System.out.println("worker [" + i + "] : " + worker[i] + "'s previous salary = " + worker[i].getSalary());
-		// 	worker[i].increaseSalary(10);
-		// 	System.out.println("worker [" + i + "] : " + worker[i] + "'s  increased salary = " + worker[i].getSalary());
+		// System.out.println("worker [" + i + "] : " + worker[i] + "'s previous salary
+		// = " + worker[i].getSalary());
+		// worker[i].increaseSalary(10);
+		// System.out.println("worker [" + i + "] : " + worker[i] + "'s increased salary
+		// = " + worker[i].getSalary());
 		// }
 		// System.out.println("............. 1 year later ...............");
 		// // Now worker 3 got promoted!!
@@ -28,9 +31,11 @@ public class Main {
 		// worker[3].setEmployeeType(new Manager(prevSalary));
 
 		// for (int i=0; i < worker.length; i++) {
-		// 	System.out.println("worker [" + i + "] : " + worker[i] + "'s  previous salary = " + worker[i].getSalary());
-		// 	worker[i].increaseSalary(10);
-		// 	System.out.println("worker [" + i + "] : " + worker[i] + "'s  increased salary = " + worker[i].getSalary());
+		// System.out.println("worker [" + i + "] : " + worker[i] + "'s previous salary
+		// = " + worker[i].getSalary());
+		// worker[i].increaseSalary(10);
+		// System.out.println("worker [" + i + "] : " + worker[i] + "'s increased salary
+		// = " + worker[i].getSalary());
 		// }
 	}
 
